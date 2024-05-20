@@ -1,6 +1,16 @@
-const { add, sub } = require('./nodelearnings/calc.js');
-console.log(add(3, 4));
-console.log(sub(4, 3));
+const readFile = require('./eventloopexamples/readfile');
+
+readFile('first.txt', (err, data) => {
+    if (err) {
+        console.error('Error reading file:', err);
+    } else {
+        console.log('File content:\n', data);
+    }
+});
+
+// const { add, sub } = require('./nodelearnings/calc.js');
+// console.log(add(3, 4));
+// console.log(sub(7, 3));
 
 
 /**
