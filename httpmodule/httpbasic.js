@@ -7,9 +7,10 @@ const server = http.createServer((req, res) => {
         res.write('Welcome to our homepage');
         res.end(); // Ending the response for the root route
     } else if (req.url === '/about') {
-        res.write('About US');
+        res.write('About US'); //write method to write to html page
         res.end(); // Ending the response for the about route
     } else {
+        //end method to write html to page
         res.end(`
             <h1>Oops!</h1>
             <p>We can't seem to find the page you are looking for</p>
