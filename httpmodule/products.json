@@ -1,0 +1,107 @@
+[
+  {
+    "id": 1,
+    "name": "Smartphone",
+    "brand": "BrandA",
+    "model": "X100",
+    "price": 699.99,
+    "features": ["5G", "128GB Storage", "6.5 inch display", "Triple Camera"],
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 2,
+    "name": "Laptop",
+    "brand": "BrandB",
+    "model": "L200",
+    "price": 999.99,
+    "features": ["16GB RAM", "512GB SSD", "15.6 inch display", "Intel i7"],
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 3,
+    "name": "Smartwatch",
+    "brand": "BrandC",
+    "model": "S300",
+    "price": 199.99,
+    "features": ["Heart Rate Monitor", "GPS", "Water Resistant", "Bluetooth"],
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 4,
+    "name": "Tablet",
+    "brand": "BrandD",
+    "model": "T400",
+    "price": 399.99,
+    "features": ["10 inch display", "64GB Storage", "Wi-Fi", "8MP Camera"],
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 5,
+    "name": "Wireless Earbuds",
+    "brand": "BrandE",
+    "model": "W500",
+    "price": 149.99,
+    "features": [
+      "Noise Cancellation",
+      "Bluetooth 5.0",
+      "20 hours battery life",
+      "Touch Control"
+    ],
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 6,
+    "name": "Gaming Console",
+    "brand": "BrandF",
+    "model": "G600",
+    "price": 499.99,
+    "features": ["4K HDR", "1TB Storage", "Wireless Controller", "VR Ready"],
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 7,
+    "name": "Digital Camera",
+    "brand": "BrandG",
+    "model": "D700",
+    "price": 799.99,
+    "features": ["24MP", "4K Video", "Wi-Fi", "Interchangeable Lens"],
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 8,
+    "name": "Bluetooth Speaker",
+    "brand": "BrandH",
+    "model": "B800",
+    "price": 99.99,
+    "features": [
+      "Portable",
+      "10 hours battery life",
+      "Waterproof",
+      "360-degree sound"
+    ],
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 9,
+    "name": "Smart TV",
+    "brand": "BrandI",
+    "model": "S900",
+    "price": 1199.99,
+    "features": ["65 inch", "4K UHD", "Smart Hub", "Voice Control"],
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 10,
+    "name": "Home Assistant",
+    "brand": "BrandJ",
+    "model": "H1000",
+    "price": 129.99,
+    "features": [
+      "Voice Control",
+      "Smart Home Integration",
+      "Bluetooth",
+      "Wi-Fi"
+    ],
+    "image": "https://via.placeholder.com/150"
+  }
+]

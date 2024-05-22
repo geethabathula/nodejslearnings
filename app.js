@@ -1,19 +1,21 @@
-const server = require('./httpmodule/httpjsondata');
-console.log(server)
+// const classEvent = require('./eventemitter/eventemitter.js');
+// console.log(classEvent);
+
+// const server = require('./eventemitter/servereventemitter');
+// console.log(server)
 /**
 //For terminal ip and op
 
 const readip = require('./terminalipop/terminalip')
  */
 
-
 /**
 //For EventEmitter
 const emitter = require('./eventemitter/eventemitter')
 
 console.log("Hello World")
-
  */
+
 /**
 //For ReadWrite with promises fsmodule
 const readAndWriteFiles = require('./fsmodule/fsasync/fsasync');

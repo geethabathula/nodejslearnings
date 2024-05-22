@@ -10,8 +10,8 @@ const errorPage = fs.readFileSync(path.join(__dirname, '..', 'error.html'), 'utf
 const usersPage = fs.readFileSync(path.join(__dirname, '..', 'users.html'), 'utf8');
 const productsPage = fs.readFileSync(path.join(__dirname, '..', 'products.html'), 'utf8');
 // Read users data from JSON file
-const jsonUsersData = JSON.parse(fs.readFileSync(path.join(__dirname, 'users.json'), 'utf8'));
-const jsonProductsData = JSON.parse(fs.readFileSync(path.join(__dirname, 'products.json'), 'utf8'));
+const jsonUsersData = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'httpmodule', 'users.json'), 'utf8'));
+const jsonProductsData = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'httpmodule', 'products.json'), 'utf8'));
 
 // Create user cards HTML
 const generateUserCards = (users) => {
@@ -42,8 +42,9 @@ const generateProductCards = (product) => {
 `).join(''));
 };
 
-//Create Server
-const server = http.createServer((req, res) => {
+const server = http.createServer();
+
+server.on('request', (req, res) => {
     const { query, pathname: path } = url.parse(req.url, true);
 
     if (path === '/' || path === '/index') {

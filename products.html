@@ -32,6 +32,10 @@
         text-align: center;
       }
 
+      h2 {
+        margin: 1rem;
+      }
+
       nav {
         display: flex;
         justify-content: center;
@@ -55,15 +59,32 @@
         text-align: center;
       }
 
-      h2 {
-        margin: 1rem;
+      .search-container {
+        margin-bottom: 20px;
+      }
+
+      .search-container input {
+        padding: 10px;
+        font-size: 16px;
+      }
+
+      .search-container button {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+      }
+
+      .search-container button:hover {
+        background-color: #0056b3;
       }
 
       .card-container {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        align-items: center;
         gap: 20px;
       }
 
@@ -85,6 +106,17 @@
         margin-bottom: 5px;
       }
 
+      .card img {
+        max-width: 100%;
+        border-radius: 8px;
+      }
+
+      .not-found {
+        color: red;
+        font-size: 18px;
+        margin-top: 20px;
+      }
+
       footer {
         background-color: #333;
         color: #fff;
@@ -103,7 +135,7 @@
   </head>
   <body>
     <header>
-      <h1>Users Dashboard</h1>
+      <h1>Products Dashboard</h1>
     </header>
     <nav>
       <a href="index">Home</a>
@@ -112,8 +144,22 @@
       <a href="products">Products</a>
     </nav>
     <main>
-      <h2>Users Dashboard</h2>
-      <div class="card-container">{{%USER_CARDS%}}</div>
+      <h2>Product List</h2>
+      <div class="search-container">
+        <form action="/products" method="GET">
+          <input
+            type="text"
+            name="id"
+            id="search-id"
+            placeholder="Enter product ID"
+          />
+          <button type="submit">Search</button>
+        </form>
+      </div>
+      <div class="card-container" id="electronics-cards">
+        {{%PRODUCT_CARDS%}}
+      </div>
+      {{%NOT_FOUND%}}
     </main>
     <footer>
       <p>&copy; 2024 Geetha Supriya Bathula. All rights reserved.</p>
